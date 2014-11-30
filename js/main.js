@@ -181,8 +181,8 @@ $(function() {
   }
 
   function increaseMathRangeSlider() {
-    var delta = 5;
-    $mathRangeSlider.val($mathRangeSlider.val() + delta);
+    var delta = 10;
+    $mathRangeSlider.val(parseInt($mathRangeSlider.val(), 10) + delta);
   }
 
   function evaluateAnswer() {
@@ -194,8 +194,16 @@ $(function() {
 
     if (currentQuestion !== undefined && currentQuestion.getAnswer() == $answer.val()) {
       numAnswersCorrect++;
-      increaseMathRangeSlider();
-       _flashboxLeft.fire();
+      
+      if (numAnswersCorrect % 5 == 0) {
+        increaseMathRangeSlider();
+      }
+       
+      if (Math.random() < .5) {
+        _flashboxLeft.fire();
+      } else {
+        _flashboxRight.fire();
+      }
       quizStartTime += 2;
     } else {
       //_flashboxRight.fire();
