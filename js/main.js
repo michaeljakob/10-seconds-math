@@ -68,6 +68,7 @@ function showStartLayout() {
   $('#sharebuttons').hide();
 
   $('#question-answer').focus();
+  $('#math-range-slider').attr('disabled', 'disabled');
 }
 
 function showEvaluationLayout() {
@@ -83,6 +84,8 @@ function showEvaluationLayout() {
 
   $('#time-left').text(QUIZ_AVAILABLE_SECONDS);
   $('#time-left-indicator').css({'width': '0%'});
+
+  $('#math-range-slider').removeAttr('disabled');
 
   
 }
@@ -144,7 +147,7 @@ function timeIsOver() {
   function getRank(score) {
     // TODO we should add a real ranking one day
 
-    var ONE_BARELY_REACHES_THIS_SCORE = 200;
+    var ONE_BARELY_REACHES_THIS_SCORE = 500;
     return Math.floor(100 * Math.min(Math.E * score / (ONE_BARELY_REACHES_THIS_SCORE * Math.PI), 1));
   }
 
@@ -186,6 +189,8 @@ $(function() {
   }
 
   function evaluateAnswer() {
+    $('#math-range-slider').attr('disabled', 'disabled');
+    
     if (countdownTimeoutId === -1) {
       countdownTimeoutId = setInterval(updateTime, 1000);
     }
