@@ -394,11 +394,6 @@ footer > p {
   display: none !important;
 }
 
-.hardly-visible {
-  color: #E7E7E5 !important;
-  position: absolute;
-  z-index: -1;
-}
 
 #android-apps {
   position: absolute;
