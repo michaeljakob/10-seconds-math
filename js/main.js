@@ -159,6 +159,7 @@ function timeIsOver() {
 $(function() {
   var $question = $('#question');
   var $answer = $('#question-answer');
+  var $mathRangeSlider = $('#math-range-slider');
   var currentQuestion;
   var factory = new QuestionFactory();
 
@@ -179,6 +180,11 @@ $(function() {
     $question.text(currentQuestion.getDisplay());
   }
 
+  function increaseMathRangeSlider() {
+    var delta = 5;
+    $mathRangeSlider.val($mathRangeSlider.val() + delta);
+  }
+
   function evaluateAnswer() {
     if (countdownTimeoutId === -1) {
       countdownTimeoutId = setInterval(updateTime, 1000);
@@ -188,10 +194,11 @@ $(function() {
 
     if (currentQuestion !== undefined && currentQuestion.getAnswer() == $answer.val()) {
       numAnswersCorrect++;
-      // _flashboxLeft.fire();
+      increaseMathRangeSlider();
+       _flashboxLeft.fire();
       quizStartTime += 2;
     } else {
-      // _flashboxRight.fire();
+      //_flashboxRight.fire();
     }
 
     setNewQuestion();

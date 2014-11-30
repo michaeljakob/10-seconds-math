@@ -15,7 +15,7 @@ $(function() {
   _flashboxLeft = {};
   _flashboxLeft.fire = function() { displayRandom($('#emotions-left'), POSITIVE_WORDS, positiveColors); };
   _flashboxRight = {};
-  _flashboxRight.fire = function() { displayRandom($('#emotions-right'), NEGATIVE_WORDS, negativeColors); };
+  _flashboxRight.fire = function() { displayRandom($('#emotions-right'), POSITIVE_WORDS, positiveColors); };
 
   function displayRandom($flashbox, wordList, colorList, duration) {
     // default args
