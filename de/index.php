@@ -9,15 +9,16 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Practice mental arithmetic &mdash; the arithmetic game</title>
+        <title>Trainiere Kopfrechnen &mdash; Das Mathematik Spiel</title>
         <meta name="keywords" content="Kopfrechnen, Mathematik, Mathe, üben, trainieren, online, live, javascript, kostenlos, werbefrei, mental arithmetic, practice, train, math, brain, mental math, arithmetics, math games, math training, remedial math practices, arithmetic problems, mental calculation, basic math, free, mental math, arithmetics, math games, math training, remedial math practices, math, fractions, homework, pi, mathematician, fraction, algebra, geometry, number, numbers, equation, equations, math anxiety, homeschool math, math problems, math games, mental math, math puzzles, decimal, percent, mathematics, math magic, mathmagic, math homework, pre-algebra, converter, convert, prime number, ratio, probability, statistics, calculate, calculator, statistic, calculus, circle, trigonometry, tessellation, tesellation, tesselation, teselation, fractal, fractol, word problems, word problem, Pythagorean Theorem, multiply, divide, division, multiplication, quadratic, square, circle, triangle, trapezoid, polygon, solve, formula, area, perimeter, volume, unit, unit conversion, conversion, measure, measurement, change units, math resources, math history, mathematical, maths, maths problem, maths problems, converting, calculating" />
         <meta name="description" content="Kopfrechnen trainieren kostenlos und werbefrei. Practice mental arithmetic online. No ads and no charge." />    
         <meta name="author" content="Troubi Entertainment, http://www.troubi.com">
 
+        <base href="http://www.mental-math-trainer.com/" />
 
         <meta property="og:image" content="http://www.mental-math-trainer.com/img/mental-math-trainer.png" />
-        <meta property="og:title" content="Practice mental arithmetic online. No ads and no charge." />
-        <meta property="og:description" content="Practice mental arithmetic online. No ads and no charge. http://mental-math-trainer.com" />
+        <meta property="og:title" content="Kopfrechnen üben online. Keine Werbung. Komplett kostenlos." />
+        <meta property="og:description" content="Trainiere Kopfrechnen online. Keine Werbung und kostenlos.. http://mental-math-trainer.com" />
         <meta property="og:url" content="http://www.mental-math-trainer.com" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -60,25 +61,25 @@
     <div class="jumbotron">
       <div id="title">
           <img src="img/mental-math-trainer.png" alt="Mental Math Trainer App Icon" />
-          <h1 id="text-title">10 seconds of math</h1>
-         
+          <h1 id="text-title">10 Sekunden Mathematik</h1>
+</h3>
       </div>
       <div id="settings-and-stats" class="container">
         <div id="settings" class="white-box">
-            <h2 id="text-selectrange">Number limit</h2>
+            <h2 id="text-selectrange">Obere Zahlenschranke</h2>
             <div id="math-range-slider"></div>
 
             <p id="text-operations">&nbsp;</p>
             <div id="div-operations">
                 <ul class="nobullets">
                     <li><label><input type="checkbox" checked="checked" value="add"> + <span id="text-op-add">Addition</span></label></li>
-                    <li><label><input type="checkbox" value="sub"> - <span id="text-op-sub">Subtraction</span></label></li>
-                    <li><label><input type="checkbox" value="pow"> x&sup2; <span id="text-op-pow">Powers</span></label></li>
+                    <li><label><input type="checkbox" value="sub"> - <span id="text-op-sub">Subtraktion</span></label></li>
+                    <li><label><input type="checkbox" value="pow"> x&sup2; <span id="text-op-pow">Potenzen</span></label></li>
                 </ul>
                 <ul class="nobullets">
-                    <li><label><input type="checkbox" value="mul"> &times; <span id="text-op-mul">Multiplication</span></label></li>                    
+                    <li><label><input type="checkbox" value="mul"> &times; <span id="text-op-mul">Multiplikation</span></label></li>                    
                     <li><label><input type="checkbox" value="div"> &divide; <span id="text-op-div">Division</span></label></li>
-                    <li><label><input type="checkbox" value="sqrt"> &radic;x <span id="text-op-pow">Square roots</span></label></li>
+                    <li><label><input type="checkbox" value="sqrt"> &radic;x <span id="text-op-pow">Wurzeln</span></label></li>
                 </ul>
             </div>
         </div>
@@ -86,7 +87,7 @@
         <div id="stats" class="white-box">
             <p id="time-box">
                 <span id="time-left">10</span>
-                <span id="time-left-text">seconds left</span>
+                <span id="time-left-text">Sekunden noch</span>
                 <span id="time-left-indicator"></span>
             </p>
             <div id="results">
@@ -134,7 +135,7 @@
 
             </div>
         </div>
-        <p id="start-quiz"><a class="button blue">Play Again</a></p>
+        <p id="start-quiz"><a class="button blue">Nochmal spielen</a></p>
       </div>
     </div>
 
@@ -162,13 +163,13 @@
     </div>
     <div id="android-apps">
         <p>
-            <span class="title">King of Math</span>
+            <span class="title">König der Mathematik</span>
             <a target="_blank" href="https://play.google.com/store/apps/details?id=com.troubi.kingofmath">
               <img alt="Android app on Google Play" src="img/en_app_rgb_wo_45.png" />
             </a>
         </p>
         <p>
-            <span class="title">Math Tricks</span>
+            <span class="title">Mathe Tricks</span>
             <a target="_blank" href="https://play.google.com/store/apps/details?id=com.troubi.mathtricks">
               <img alt="Android app on Google Play" src="img/en_app_rgb_wo_45.png" />
             </a>
@@ -217,6 +218,8 @@
         r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
         ga('create','UA-52396561-1');ga('send','pageview');
     </script>
+
+
 
   </body>
 </html>
