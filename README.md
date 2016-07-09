@@ -10,3 +10,8 @@ Test it yourself over here at http://www.mental-math-trainer.com
 
 # Discussion on HackerNews
 https://news.ycombinator.com/item?id=8664180
+
+
+http://www.learn-swiss-german.ch/
+http://www.schweizerdeutsch-lernen.ch/
+http://www.michael-jakob.com/
